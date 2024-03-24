@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "novel-style-bert-vits2",
+    "version": "1.0",
+    "permissions": [
+        "http://*/*"
+    ],
+    "description": "test.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://ncode.syosetu.com/*/*/"],
+        "js": ["novel.js"]
+      }
+    ],
+    
+    "background": {
+        "scripts": ["background-script.js"],
+        "persistent": false,
+        "type": "module"
+      }
+      
+  }
+  
